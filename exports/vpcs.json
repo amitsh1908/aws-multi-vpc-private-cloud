@@ -1,0 +1,58 @@
+{
+    "Vpcs": [
+        {
+            "OwnerId": "347197240013",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-0cb7cc0a14c60c888",
+                    "CidrBlock": "192.168.2.0/24",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": false,
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "VPC-B"
+                }
+            ],
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "VpcId": "vpc-06b526cb03cf82f7a",
+            "State": "available",
+            "CidrBlock": "192.168.2.0/24",
+            "DhcpOptionsId": "dopt-04a6476a8a882593b"
+        },
+        {
+            "OwnerId": "347197240013",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-05abc7701914d5c8c",
+                    "CidrBlock": "192.168.1.0/24",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": false,
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "VPC-A"
+                }
+            ],
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "VpcId": "vpc-08e922658e0993158",
+            "State": "available",
+            "CidrBlock": "192.168.1.0/24",
+            "DhcpOptionsId": "dopt-04a6476a8a882593b"
+        }
+    ]
+}

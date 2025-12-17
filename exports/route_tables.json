@@ -1,0 +1,119 @@
+{
+    "RouteTables": [
+        {
+            "Associations": [
+                {
+                    "Main": true,
+                    "RouteTableAssociationId": "rtbassoc-0f3355b4abae54481",
+                    "RouteTableId": "rtb-01709d9ddb05f311e",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-01709d9ddb05f311e",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "192.168.1.0/24",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                },
+                {
+                    "DestinationCidrBlock": "192.168.2.0/24",
+                    "Origin": "CreateRoute",
+                    "State": "active",
+                    "VpcPeeringConnectionId": "pcx-005b345dee49b0119"
+                },
+                {
+                    "DestinationCidrBlock": "0.0.0.0/0",
+                    "GatewayId": "igw-05b4d6284bac6b246",
+                    "Origin": "CreateRoute",
+                    "State": "active"
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "RT-A"
+                }
+            ],
+            "VpcId": "vpc-08e922658e0993158",
+            "OwnerId": "347197240013"
+        },
+        {
+            "Associations": [
+                {
+                    "Main": true,
+                    "RouteTableAssociationId": "rtbassoc-04e060199c0a4e129",
+                    "RouteTableId": "rtb-0c918acb669f61b68",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-0c918acb669f61b68",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "192.168.1.0/24",
+                    "Origin": "CreateRoute",
+                    "State": "active",
+                    "VpcPeeringConnectionId": "pcx-005b345dee49b0119"
+                },
+                {
+                    "DestinationCidrBlock": "192.168.2.0/24",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "RT-B"
+                }
+            ],
+            "VpcId": "vpc-06b526cb03cf82f7a",
+            "OwnerId": "347197240013"
+        },
+        {
+            "Associations": [
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-0a6789490d7081cc1",
+                    "RouteTableId": "rtb-0df82842553dc3a19",
+                    "SubnetId": "subnet-07ebce143c883df35",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-0df82842553dc3a19",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "192.168.1.0/24",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                },
+                {
+                    "DestinationCidrBlock": "0.0.0.0/0",
+                    "NatGatewayId": "nat-03c295bd605ffcd46",
+                    "Origin": "CreateRoute",
+                    "State": "active"
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "Pvt-Rt-A"
+                }
+            ],
+            "VpcId": "vpc-08e922658e0993158",
+            "OwnerId": "347197240013"
+        }
+    ]
+}
