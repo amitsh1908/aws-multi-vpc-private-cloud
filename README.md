@@ -1,7 +1,9 @@
 # Secure Multi-VPC Architecture on AWS
 
-This project demonstrates a secure, production-style AWS networking setup using
-multiple VPCs, private subnets, a bastion host, NAT Gateway, and VPC peering.
+-This project demonstrates a secure, production-style AWS networking setup using
+ multiple VPCs, private subnets, a bastion host, NAT Gateway, and VPC peering.
+-This infrastructure was created manually using the AWS Console and verified
+ using AWS CLI exports.
 
 ## Architecture Overview
 - VPC-A
@@ -36,6 +38,3 @@ and stored in the `exports/` directory.
 - CloudShell & AWS CLI
 - Secure Network Design
 
-## Notes
-This infrastructure was created manually using the AWS Console and verified
-using AWS CLI exports.
